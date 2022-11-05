@@ -15,14 +15,12 @@ video: Chapter 2 - Part 3
  
  
  1) Write down the names of the 6 major primitive types available in C++  here:
- 
- 
- 
- 
- 
- 
- 
- 
+ int
+float 
+bool
+double
+char
+unsigned int
  
  
 2) for each primitive type, write out 3 variable declarations inside the variableDeclaration() function on line 59.
@@ -64,7 +62,31 @@ void variableDeclarations()
 {
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
+    int num = 1;
+    int num2 = -2;
+    int num3 = 3;
+
+    float num4 = 1.5f;
+    float num5 = -1.55f;
+    float num6 = 1.28f;
+
+    bool A = true;
+    bool B = false;
+    bool C = true;
+
+    double num7 = 1.5;
+    double num8 = -1.55;
+    double num9 = 1.28;
+
+    char chr1 = 'a';
+    char chr2 = 'b';
+    char chr3 = 'c';
     
+
+    unsigned int num10 = 4;
+    unsigned int num11 = 5;
+    unsigned int num12 = 6;
+ 
 
     
     ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
@@ -85,41 +107,99 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  1)
  */
 
+int num(int num1 = 1, num2 = 2 )
+{
+    ignoreUnused(num1, num2 ); 
+    return{};
+}
+
 /*
  2)
  */
 
+int cost (int grade = 1, num size = 2, bool specialOption =true)
+{
+    ignoreUnused(grade ,size, specialOption); 
+    return{};
+}
+
 /*
  3)
  */
+int numberOfAnimals(int dog, int cat  )
+{
+    ignoreUnused(dog1, cat ); 
+    return{};
+}
 
 /*
  4)
  */
 
+bool score(float = score1 , float = score2  )
+{
+    ignoreUnused(score1, score1 ); 
+    return{};
+}
+
 /*
  5)
  */
+
+bool select(int money=300  , float gold =25.5  )
+{
+    ignoreUnused(money, gold ); 
+    return{};
+}
 
 /*
  6)
  */
 
+float calculation( float num3= 55.6 float num4= 43.6)
+{
+    ignoreUnused(money, gold ); 
+    return{};
+}
+
 /*
  7)
  */
 
+void printNum ( int num5 =54  float num6 = 44.2)
+{
+    ignoreUnused(num5, num6 ); 
+}
 /*
  8)
  */
-
+void printChar (char chr1= 'a' char chr2= 'b')
+{
+    ignoreUnused(chr1, chr2 ); 
+}
 /*
  9)
  */
 
+float priceOfLand (float pricePerUnitOfArea= 33.5,float landSize= 42.1)
+{
+    ignoreUnused(pricePerUnitOfArea, landSize ); 
+    return{};
+}
+
+
 /*
  10)
  */
+
+float mileage (float distance =78.3 fuelConsumption = 4.3)
+{
+    ignoreUnused(distance,fuelConsumption ); 
+    return{};
+}
+
+
+
 
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
@@ -141,27 +221,27 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    
+    auto count = num(1,2);
     //2)
-    
+    auto purchase =cost ( 1, 2,true);
     //3)
-    
+    auto animals =numberOfAnimals(dog,cat  );
     //4)
-    
+    auto sum = score(score1 ,score2 );
     //5)
-    
+    auto whichIsExpensive =select(300  , 25.5  );
     //6)
-    
+    auto calaculated =calculation(55.6 ,43.6);
     //7)
-    
+    printNum (54 ,44.2);
     //8)
-    
+    printChar ('a' , 'b');
     //9)
-    
+    auto  autoLand =priceOfLand (33.5,42.1);
     //10)
+    auto car =mileage (78.3,4.3);
     
-    
-    ignoreUnused(carRented);
+    ignoreUnused(carRented,count,purchasem,animals,sum,whichIsExpensive,calaculated,printNum, printChar,autoLand,car);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
