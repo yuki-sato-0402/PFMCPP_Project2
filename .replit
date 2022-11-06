@@ -55,5 +55,4 @@ text = "-enable-pretty-printing"
 
 [nix]
 
-[nix.channel]
 channel = "stable-22_05"
