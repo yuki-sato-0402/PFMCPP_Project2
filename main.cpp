@@ -89,7 +89,7 @@ void variableDeclarations()
  
 
     
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number,num,num2,num3,num4,num5,num6,A,B,C,num7,num8,num9,chr1,chr2,chr3,num10,num11,num12); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -181,7 +181,7 @@ void printChar (char chr1= 'a', char chr2= 'b')
  9)
  */
 
-float priceOfLand (float pricePerUnitOfArea= 33.5,float landSize= 42.1)
+float priceOfLand (float pricePerUnitOfArea= 33.5f,float landSize= 42.1f)
 {
     ignoreUnused(pricePerUnitOfArea, landSize ); 
     return{};
@@ -231,15 +231,15 @@ int main()
     //5)
     auto whichIsExpensive =select(300  , 25.5  );
     //6)
-    auto calaculated =calculation(55.6 ,43.6);
+    auto calaculated =calculation(55.6f , 43.6f);
     //7)
-    printNum (54 ,44.2);
+    printNum (54 ,44.2f);
     //8)
     printChar ('a' , 'b');
     //9)
-    auto  autoLand =priceOfLand (33.5,42.1);
+    auto  autoLand =priceOfLand (33.5f ,42.1f );
     //10)
-    auto car =mileage (78.3,4.3);
+    auto car =mileage (78.3f,4.3f);
     
     ignoreUnused(carRented,count,purchase,animals,compare,whichIsExpensive,calaculated,printNum, printChar,autoLand,car);
     std::cout << "good to go!" << std::endl;
