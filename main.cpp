@@ -241,7 +241,7 @@ int main()
     //10)
     auto car = mileage(78.3f, 4.3f);
     
-    ignoreUnused(carRented,count,purchase,animals,compare,whichIsExpensive,calaculated,printNum, printChar,autoLand,car);
+    ignoreUnused(carRented, count, purchase, animals, compare, whichIsExpensive, calaculated, printNum, printChar, autoLand,car);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
