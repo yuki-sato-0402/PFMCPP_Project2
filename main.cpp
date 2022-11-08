@@ -117,7 +117,7 @@ int num(int num1 = 1, int num2 = 2)
  2)
  */
 
-int cost (int grade = 1, int size = 2, bool specialOption = true)
+int cost(int grade = 1, int size = 2, bool specialOption = true)
 {
     ignoreUnused(grade, size, specialOption); 
     return{};
@@ -166,14 +166,14 @@ float calculation(float num3 = 55.6f, float num4 = 43.6f)
  7)
  */
 
-void printNum (int num5 = 54, float num6 = 44.2f)
+void printNum(int num5 = 54, float num6 = 44.2f)
 {
     ignoreUnused(num5, num6); 
 }
 /*
  8)
  */
-void printChar (char chr1 = 'a', char chr2 = 'b')
+void printChar(char chr1 = 'a', char chr2 = 'b')
 {
     ignoreUnused(chr1, chr2); 
 }
@@ -181,7 +181,7 @@ void printChar (char chr1 = 'a', char chr2 = 'b')
  9)
  */
 
-float priceOfLand (float pricePerUnitOfArea = 33.5f, float landSize = 42.1f)
+float priceOfLand(float pricePerUnitOfArea = 33.5f, float landSize = 42.1f)
 {
     ignoreUnused(pricePerUnitOfArea, landSize); 
     return{};
@@ -192,7 +192,7 @@ float priceOfLand (float pricePerUnitOfArea = 33.5f, float landSize = 42.1f)
  10)
  */
 
-float mileage (float distance = 78.3f, float fuelConsumption = 4.3f)
+float mileage(float distance = 78.3f, float fuelConsumption = 4.3f)
 {
     ignoreUnused(distance, fuelConsumption ); 
     return{};
@@ -223,7 +223,7 @@ int main()
     //1)
     auto count = num(1, 2);
     //2)
-    auto purchase = cost (1, 2, true);
+    auto purchase = cost(1, 2, true);
     //3)
     auto animals = numberOfAnimals(3, 4);
     //4)
@@ -233,13 +233,13 @@ int main()
     //6)
     auto calaculated = calculation(55.6f, 43.6f);
     //7)
-    printNum (54, 44.2f);
+    printNum(54, 44.2f);
     //8)
-    printChar ('a', 'b');
+    printChar('a', 'b');
     //9)
-    auto  autoLand = priceOfLand (33.5f, 42.1f);
+    auto  autoLand = priceOfLand(33.5f, 42.1f);
     //10)
-    auto car = mileage (78.3f, 4.3f);
+    auto car = mileage(78.3f, 4.3f);
     
     ignoreUnused(carRented,count,purchase,animals,compare,whichIsExpensive,calaculated,printNum, printChar,autoLand,car);
     std::cout << "good to go!" << std::endl;
