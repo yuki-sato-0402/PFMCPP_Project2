@@ -223,23 +223,23 @@ int main()
     //1)
     auto count = num(1, 2);
     //2)
-    auto purchase =cost (1, 2, true);
+    auto purchase = cost (1, 2, true);
     //3)
-    auto animals =numberOfAnimals(3, 4);
+    auto animals = numberOfAnimals(3, 4);
     //4)
     auto compare = score(45.6f, 67.9f);
     //5)
-    auto whichIsExpensive =select(300, 25.5);
+    auto whichIsExpensive = select(300, 25.5);
     //6)
-    auto calaculated =calculation(55.6f, 43.6f);
+    auto calaculated = calculation(55.6f, 43.6f);
     //7)
     printNum (54, 44.2f);
     //8)
     printChar ('a', 'b');
     //9)
-    auto  autoLand =priceOfLand (33.5f, 42.1f);
+    auto  autoLand = priceOfLand (33.5f, 42.1f);
     //10)
-    auto car =mileage (78.3f, 4.3f);
+    auto car = mileage (78.3f, 4.3f);
     
     ignoreUnused(carRented,count,purchase,animals,compare,whichIsExpensive,calaculated,printNum, printChar,autoLand,car);
     std::cout << "good to go!" << std::endl;
