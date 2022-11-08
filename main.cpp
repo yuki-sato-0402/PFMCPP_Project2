@@ -89,7 +89,7 @@ void variableDeclarations()
  
 
     
-    ignoreUnused(number,num,num2,num3,num4,num5,num6,A,B,C,num7,num8,num9,chr1,chr2,chr3,num10,num11,num12); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number, num, num2, num3, num4, num5, num6, A, B, C, num7, num8, num9, chr1, chr2, chr3, num10, num11, num12); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -107,9 +107,9 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  1)
  */
 
-int num(int num1 = 1, int num2 = 2 )
+int num(int num1 = 1, int num2 = 2)
 {
-    ignoreUnused(num1, num2 ); 
+    ignoreUnused(num1, num2); 
     return{};
 }
 
@@ -117,18 +117,18 @@ int num(int num1 = 1, int num2 = 2 )
  2)
  */
 
-int cost (int grade = 1, int size = 2, bool specialOption =true)
+int cost (int grade = 1, int size = 2, bool specialOption = true)
 {
-    ignoreUnused(grade ,size, specialOption); 
+    ignoreUnused(grade, size, specialOption); 
     return{};
 }
 
 /*
  3)
  */
-int numberOfAnimals(int dog, int cat  )
+int numberOfAnimals(int dog, int cat)
 {
-    ignoreUnused(dog, cat ); 
+    ignoreUnused(dog, cat); 
     return{};
 }
 
@@ -136,9 +136,9 @@ int numberOfAnimals(int dog, int cat  )
  4)
  */
 
-bool score(float score1=45.6f , float score2 =67.9f  )
+bool score(float score1 = 45.6f, float score2 = 67.9f)
 {
-    ignoreUnused(score1, score2 ); 
+    ignoreUnused(score1, score2); 
     return{};
 }
 
@@ -146,9 +146,9 @@ bool score(float score1=45.6f , float score2 =67.9f  )
  5)
  */
 
-bool select(int money=300  , float gold =25.5  )
+bool select(int money = 300, float gold = 25.5)
 {
-    ignoreUnused(money, gold ); 
+    ignoreUnused(money, gold); 
     return{};
 }
 
@@ -156,9 +156,9 @@ bool select(int money=300  , float gold =25.5  )
  6)
  */
 
-float calculation(float num3= 55.6f ,float num4= 43.6f)
+float calculation(float num3 = 55.6f, float num4 = 43.6f)
 {
-    ignoreUnused(num3, num4 ); 
+    ignoreUnused(num3, num4); 
     return{};
 }
 
@@ -166,24 +166,24 @@ float calculation(float num3= 55.6f ,float num4= 43.6f)
  7)
  */
 
-void printNum ( int num5 =54  ,float num6 = 44.2f)
+void printNum (int num5 = 54, float num6 = 44.2f)
 {
-    ignoreUnused(num5, num6 ); 
+    ignoreUnused(num5, num6); 
 }
 /*
  8)
  */
-void printChar (char chr1= 'a', char chr2= 'b')
+void printChar (char chr1 = 'a', char chr2 = 'b')
 {
-    ignoreUnused(chr1, chr2 ); 
+    ignoreUnused(chr1, chr2); 
 }
 /*
  9)
  */
 
-float priceOfLand (float pricePerUnitOfArea= 33.5f,float landSize= 42.1f)
+float priceOfLand (float pricePerUnitOfArea = 33.5f, float landSize = 42.1f)
 {
-    ignoreUnused(pricePerUnitOfArea, landSize ); 
+    ignoreUnused(pricePerUnitOfArea, landSize); 
     return{};
 }
 
@@ -192,9 +192,9 @@ float priceOfLand (float pricePerUnitOfArea= 33.5f,float landSize= 42.1f)
  10)
  */
 
-float mileage (float distance =78.3f, float fuelConsumption = 4.3f)
+float mileage (float distance = 78.3f, float fuelConsumption = 4.3f)
 {
-    ignoreUnused(distance,fuelConsumption ); 
+    ignoreUnused(distance, fuelConsumption ); 
     return{};
 }
 
@@ -221,25 +221,25 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    auto count = num(1,2);
+    auto count = num(1, 2);
     //2)
-    auto purchase =cost ( 1, 2,true);
+    auto purchase =cost (1, 2, true);
     //3)
-    auto animals =numberOfAnimals( 3,4);
+    auto animals =numberOfAnimals(3, 4);
     //4)
-    auto compare = score(45.6f ,67.9f );
+    auto compare = score(45.6f, 67.9f);
     //5)
-    auto whichIsExpensive =select(300  , 25.5  );
+    auto whichIsExpensive =select(300, 25.5);
     //6)
-    auto calaculated =calculation(55.6f , 43.6f);
+    auto calaculated =calculation(55.6f, 43.6f);
     //7)
-    printNum (54 ,44.2f);
+    printNum (54, 44.2f);
     //8)
-    printChar ('a' , 'b');
+    printChar ('a', 'b');
     //9)
-    auto  autoLand =priceOfLand (33.5f ,42.1f );
+    auto  autoLand =priceOfLand (33.5f, 42.1f);
     //10)
-    auto car =mileage (78.3f,4.3f);
+    auto car =mileage (78.3f, 4.3f);
     
     ignoreUnused(carRented,count,purchase,animals,compare,whichIsExpensive,calaculated,printNum, printChar,autoLand,car);
     std::cout << "good to go!" << std::endl;
